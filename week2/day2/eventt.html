@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<body >
+<img src="iiit-new.png" onload="loadImage()" width="100" height="132" align="right">
+<p  id="demo"></p>
+<input  type="text" id="enter" oninput="myFunction()">
+<div onmouseover="mOver(this)" onmouseout="mOut(this)" 
+style="background-color:lightblue;width:120px;height:20px;padding:40px;">
+Mouse Over Me</div>
+<button onclick="displayDate()">The time is?</button>
+<input type="text" onblur="myFun()">
+ <script>
+	{
+function myFunction() {
+  var x = document.getElementById("enter").value;
+  document.getElementById("demo").innerHTML = "Textentered: " + x;
+}
+function loadImage() {
+  alert("Image is loaded");
+}
+function mOver(obj) {
+  obj.innerHTML = "Mouseoverevent"
+}
+function mOut(obj) {
+  obj.innerHTML = "Mouse Over Me"
+}
+function myFun() {
+  alert("Input field lost focus.");
+}
+}
+</script>
+<script>
+function displayDate() {
+  document.getElementById("demo").innerHTML = Date();
+}
+</script>
+<p id="demo"></p>
+</script>
+</body>
+</html>
