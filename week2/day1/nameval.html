@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Name validator</title>
+	<style >
+		body
+		{
+			background: lightblue;
+			font-style: bold:;
+		}
+		h2
+		{
+			font-style: italic;
+		}
+	</style>
+	<script >
+		function allLetter(inputtxt)
+      { 
+      var letters = /^[A-Za-z]+$/;
+      if(inputtxt.value.match(letters))
+      {
+      alert('Your name have been accepted ');
+      return true;
+      }
+      else
+      {
+      alert('Please input alphabet characters only');
+      return false;
+      }
+      }
+	</script>
+</head>
+<body>
+	<header><h2>Enter your Name and Submit</h2></header>
+
+<form name="form1" action="#">
+<ul>
+<li colour>NAME:</li>
+<li class="rq" >*Enter alphabets only. </li>
+<li><input type='text' name='text1'/></li>
+<li><input type="submit" name="submit" value="Submit" onclick="allLetter(document.form1.text1)" /></li>
+</ul>
+</form>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mobile Validation</title>
+</head>
+<body>
+	<script >
+		function myfun()
+		{
+			let a =document.getElementByid('messages').value;
+			{
+			if(a=="")
+			{
+				document.getElementByid('messages')="enter Your number";
+				return false;
+			}
+			if(isNaN(a))
+			{
+				document.getElementByid('messages')="number must be 10 digit number";
+				return false;
+			}
+			if (a.length<10)
+			{
+				document.getElementByid('messages')="Number cannot be less than 10 digits";
+				return false;
+			}
+			if (a.length>10)
+			{
+				document.getElementByid('messages')='number cannot be more than 10 digits';
+				return false;
+			}
+			if ((a.charAt(0)!=9) && (a.charAt(0)!=8) && (a.charAt(0)!=7) && (a.charAt(0)!=6) )
+			{
+				document.getElementByid('messages')='number must start with 9 or 8 or 7 or 6';
+				return false;
+			}
+		}
+	}
+			
+	</script>
+	
+<form onsubmit="return myfun() return myfun1()">
+	<input type="text" id ="mobilenumber" value=" ">Mobile Number</input><br>
+	<span id="messages" style="color: red"></span>
+	<input type="submit"  value="Submit"></input>
+	<input type="Checkbox" name="container" value="EmbedeedSystem"> EmbedeedSystem</input>
+	<input type="Checkbox" name="container" value="EthicalHacking"> EthicalHacing</input>
+	<input type="Checkbox" name="container" value="Surveying"> Surveying</input>
+	<div><p id="messages"> </p></div>
+	</form>
+
+<script >
+		function myfun1()
+		{
+			var a1=document.forms.container;
+			for(i=0;i<a1.length;i++)
+			{
+				if(a1[i].checked==true)
+					return true;
+			}
+			alert("select one ")
+			return false;
+		}
+	</script>
+</body>
+</html>
