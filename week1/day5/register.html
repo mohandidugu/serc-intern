@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>registeration.html</title>
+	<style >
+	header
+		{
+			border: 1px black;
+			background: lightblue;
+			padding : 30px;
+			font-style: bold;
+			font-family: "Times New Roman",Times, serif;
+		}
+	</style>
+</head>
+<body>
+		<a href="https://www.iiit.ac.in/"><img src="iiit-new.png" width="200px"></a>
+	<a href="https://serc.iiit.ac.in/rdip"><p align="right"> RDIP</p><br></a>
+
+	<header>
+		<a href="home.html">Home</a>
+		<a href="register.html">Registration Form</a>
+	</header>
+	<form action="contact.php" method="GET">
+		<p>First Name</p>
+		<label for="name"> </label>
+<input type="text" id="name" name="Name" ><br>
+<p>Email</p>
+<label for="text" ></label>
+<input type="text" name="Email"><br>
+<p>Phone Number</p>
+<label for="Phone number"> </label>
+<input type="number" name="Phone" pattern="[0-9][10]" ><br>
+<p>Gender</p>
+  <input type="radio" id="Male" name="Gender" value="Male">
+  <label for="Male">Male</label>
+  <input type="radio" id="Female" name="Gender" value="Female">
+  <label for="Female">Female</label>
+  <input type="radio" id="Others" name="Gender" value="Others">
+  <label for="Others">Others</label><br>
+  <p>Reason for Rdip</p>
+  <input type="radio" id="HTML" name="" value="HTML">
+  <label for="HTML">HTML</label>
+  <input type="radio" id="CSS" name="Gender" value="CSS">
+  <label for="CSS">CSS</label>
+  <input type="radio" id="JAVASCRIPT" name="Gender" value="JAVASCRIPT">
+  <label for="JAVASCRIPT">JAVASCRIPT</label><br>
+  <p>COLLEGE</p>
+		<label for="COLLEGE"> </label>
+<input type="text" id="name" name="COLLEGE" ><br>
+<P >I DECLARE ABOVE DETAILS ARE TRUE</P>
+  
+ <a href="details.html" target="details.html">submit</a>
+  <a href="registration.html" target="registration.html">reset</a>
+
+<script src="validation.js"></script>
+
+</body>
+</html>

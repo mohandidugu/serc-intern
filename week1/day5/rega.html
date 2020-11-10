@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Registrtion</title>
+	<style > 
+a:link {
+  color: hotpink;
+}
+
+
+a:visited {
+  color: green;
+}
+
+a:hover {
+  color: lightblue;
+}
+
+
+a:active {
+  color: blue;
+}
+		body{
+			
+			background: white;
+			font-style: italic;
+		}
+		</style>
+</head>
+<body>
+<h1> welocome to Registration page</h1>
+<form action="contact.php" method="POST">
+		<p>Name</p>
+		<label for="name"> </label>
+<input type="text" id="name" name="Name" ><br>
+<p>Phone Number</p>
+<label for="Phone number"> </label>
+<input type="number" name="Phone" pattern="[0-9][10]" ><br>
+<p>select course</p>
+  <input type="radio" id="Bachelors" name="course" value="Bachelors">
+  <label for="Bachelors">Bachelors</label><br>
+  <input type="radio" id="Masters" name="course" value="Masters">
+  <label for="Masters">Masters</label><br>
+  <p>Description box</p>
+  <textarea></textarea>
+  <p>Subject of interest</p>
+    <input type="checkbox" id="Subject" name="course" value="Embedeed">
+  <label for="course"> Embedeed</label><br>
+  <input type="checkbox" id="course" name="Subject" value="Ethical Hacing">
+  <label for="course"> Ethical Hacing</label><br>
+  <input type="checkbox" id="course" name="Subject" value="Surveying" >
+  <label for="course"> Surveying</label><br>
+ <a href="personaldetails.html" target="personaldetails.html">register</a>
+  <a href="personaldetails.html" target="personaldetails.html">submit</a>
+
+
+	</form>
+</body>
+</html>
