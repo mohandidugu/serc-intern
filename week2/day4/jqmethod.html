@@ -1,0 +1,47 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<meta charset="utf-8">  
+    <style> 
+        #box { 
+            color: green; 
+            border: 5px solid black; 
+            width: 200px; 
+            text-align: center; 
+            padding: 200px;
+        } 
+    </style> 
+    <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script> 
+    <script> 
+        $(document).ready(function() { 
+            $("button").click(function() { 
+                $("#box").toggle(); 
+            }); 
+        }); 
+    </script>
+</head> 
+<body> 
+  <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
+  <button> hide show</button>
+     <div id="box">
+        <h1>jquery</h1>
+        <p>Now lets look into the fadeout and fade in jqurey.This text should be hidden after 1500 milliseconds.This text should be openup after 2000 millsecond</p>
+    </div> 
+    <button id ="fadeOutBtn" >fadeout</button> 
+    <button id="fadeInBtn">fadein</button>
+    <script> 
+    $(document).ready(function() { 
+            $("fadeOutBtn").click(function() { 
+                $("#box").fadeout(1500,function()); 
+            }); 
+        }); 
+            
+    </script> 
+    <script > 
+    $(document).ready(function() { 
+            $("fadeInBtn").click(function(2000,function() { 
+                $("#box").fadein(); 
+            }); 
+        }); </script>
+</body> 
+</html> 
